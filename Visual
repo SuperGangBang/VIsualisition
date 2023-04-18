@@ -1,0 +1,6 @@
+def viz(prediction, X):
+    plt.figure(figsize=(12, 12))
+    plt.subplot(224)
+    plt.scatter(X[:, 0], X[:, 1], c=prediction)
+    plt.title("Unevenly Sized Blobs")
+    plt.show()
